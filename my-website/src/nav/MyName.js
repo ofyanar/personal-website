@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Center } from '@chakra-ui/react';
 
 const MyName = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);

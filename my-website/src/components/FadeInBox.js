@@ -1,4 +1,4 @@
-import { Box, chakra } from '@chakra-ui/react';
+import { chakra } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import '../css/AboutMe.css';
 

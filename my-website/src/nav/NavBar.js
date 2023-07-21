@@ -1,14 +1,14 @@
 import React from 'react';
-import { Center, Square, Circle, Box, SimpleGrid } from '@chakra-ui/react';
+import { Center } from '@chakra-ui/react';
+import MyName from './MyName';
+import IconLinks from './IconLinks';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faIdCard, faDiagramProject, faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons';
 
-import MyName from './MyName';
-import IconLinks from './IconLinks';
 import './NavBar.css'; // Import your CSS file
 
-const NavBar = () => {
+const NavBar = ({scroll}) => {
   return (
     <nav className="navbar">
       <MyName/>
@@ -18,7 +18,7 @@ const NavBar = () => {
                 <a href="">Home <FontAwesomeIcon icon={faHouse} /></a>
               </li>
               <li>
-                <a href="#About">About <FontAwesomeIcon icon={faIdCard} /></a>
+                <a onClick={() => scroll('About')}>About <FontAwesomeIcon icon={faIdCard} /></a>
               </li>
               <li>
                 <a href="/Portfolio">Portfolio <FontAwesomeIcon icon={faDiagramProject} /></a>
@@ -27,7 +27,7 @@ const NavBar = () => {
                 <a href="/Contact">Contact <FontAwesomeIcon icon={faEnvelope} /></a>
               </li>
               <li>
-                <a href="/CV">CV <FontAwesomeIcon icon={faDownload} /></a>
+                <a href="" target="_blank">CV <FontAwesomeIcon icon={faDownload} /></a>
               </li>
           </ul>
         </Center>

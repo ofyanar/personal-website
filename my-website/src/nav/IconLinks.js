@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { Center, SimpleGrid } from '@chakra-ui/react';
+import { Center } from '@chakra-ui/react';
 
 const IconLinks = () => {
 

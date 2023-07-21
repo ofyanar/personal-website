@@ -2,17 +2,22 @@ import React from 'react';
 import './css/App.css';
 import NavBar from './nav/NavBar';
 import AboutMe from './components/AboutMe';
-import { Center, Square, Circle, Box } from '@chakra-ui/react';
-import ButtonExample from './ButtonExample';
-import FadeInBox from './components/FadeInBox';
 
 const App = () => {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start' 
+    });
+  };
+
   return (
     <div className="App">
-      <NavBar/>
-      <FadeInBox>
-        <AboutMe id = "About"/>
-      </FadeInBox>
+      <NavBar scroll = {scrollToSection}/>
+      <div id="About">
+          <AboutMe />
+      </div>
         
     </div>
   );
