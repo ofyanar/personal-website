@@ -16,14 +16,12 @@ const MyName = () => {
         };
     }, []);
     
-    const maxDisplayWidth = 950;
+    const maxDisplayWidth = 980;
 
     return (
-        <div>
+        <div class="head-item1">
       {windowWidth > maxDisplayWidth ? (
-            <div class="head-item1">
                 <a href=""><section id="myName">Omer Yanar</section></a>
-            </div>
       ) : null}
     </div>
 

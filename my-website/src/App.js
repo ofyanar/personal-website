@@ -11,13 +11,7 @@ const App = () => {
     <div className="App">
       <NavBar/>
       <FadeInBox>
-        <AboutMe/>
-      </FadeInBox>
-      <FadeInBox>
-        <AboutMe/>
-      </FadeInBox>
-      <FadeInBox>
-        <AboutMe/>
+        <AboutMe id = "About"/>
       </FadeInBox>
         
     </div>

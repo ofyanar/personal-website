@@ -20,11 +20,11 @@ const IconLinks = () => {
         };
     }, []);
     
-    const maxDisplayWidth = 950;
+    const maxDisplayWidth = 900;
     return (
       <div>
       {windowWidth > maxDisplayWidth ? (
-            <SimpleGrid columns = {2} className="head-item3">
+            <div className="head-item3">
             <Center className = "c-item">
                 <a title="LinkedIn" href="https://linkedin.com/in/omer-yanar-864a17231/" target="_blank" >
                   <FontAwesomeIcon className = "linkedin-icon" icon={faLinkedin} />
@@ -36,7 +36,7 @@ const IconLinks = () => {
                 </a>
             </Center>
             
-		    </SimpleGrid>
+		    </div>
       ) : null}
     </div>
           
