@@ -21,7 +21,7 @@ const NavBar = ({scroll}) => {
                 <a onClick={() => scroll('About')}>About <FontAwesomeIcon icon={faIdCard} /></a>
               </li>
               <li>
-                <a href="/Portfolio">Portfolio <FontAwesomeIcon icon={faDiagramProject} /></a>
+                <a onClick={() => scroll('Portfolio')}>Portfolio <FontAwesomeIcon icon={faDiagramProject} /></a>
               </li>
               <li>
                 <a href="/Contact">Contact <FontAwesomeIcon icon={faEnvelope} /></a>

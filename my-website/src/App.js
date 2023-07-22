@@ -2,6 +2,7 @@ import React from 'react';
 import './css/App.css';
 import NavBar from './nav/NavBar';
 import AboutMe from './components/AboutMe';
+import Portfolio from './components/Portfolio'
 
 const App = () => {
   const scrollToSection = (sectionId) => {
@@ -18,6 +19,9 @@ const App = () => {
       <div id="About">
           <AboutMe />
       </div>
+
+     
+      <Portfolio />
         
     </div>
   );

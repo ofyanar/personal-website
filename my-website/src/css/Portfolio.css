@@ -1,0 +1,70 @@
+#Portfolio {
+    background-color: #333;
+    font-family: 'Sansation Light';
+    height:600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.prt.prt1 {
+    background-image: url('../images/prt/prt1.png');
+}
+
+.prt.prt2 {
+    background-image: url('../images/prt/prt2.png');
+}
+
+.prt.prt3 {
+    background-image: url('../images/prt/prt3.png');
+}
+
+.prt.prt4 {
+    background-image: url('../images/prt/prt4.png');
+}
+
+.prt.prt5 {
+    background-image: url('../images/prt/prt5.png');
+}
+
+.prt.prt6 {
+    background-image: url('../images/prt/prt6.png');
+}
+
+
+
+.sGrid{
+    width: auto;
+}
+
+.sGrid.b {
+    position:relative;
+    background-color: aquamarine;
+    height: 200px;
+    width: 300px;
+    color: beige;
+    border-radius: 10px;
+    left: 30%;
+    top: 30%;
+}
+
+#title{
+	text-align:center;
+	font-size:25px;
+	color:rgb(255, 255, 255);
+	position:relative;
+}
+
+#title::after{
+	content: "";
+	text-align:center;
+	font-size:20px;
+	background:#3B5998;
+	position:absolute;
+	
+	bottom: -1px;
+	left: 45.5%;
+	height: 3px;
+	width: 9%;
+	
+}
