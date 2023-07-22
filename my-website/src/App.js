@@ -2,7 +2,8 @@ import React from 'react';
 import './css/App.css';
 import NavBar from './nav/NavBar';
 import AboutMe from './components/AboutMe';
-import Portfolio from './components/Portfolio'
+import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 
 const App = () => {
   const scrollToSection = (sectionId) => {
@@ -22,6 +23,7 @@ const App = () => {
 
      
       <Portfolio />
+      <Footer/>
         
     </div>
   );

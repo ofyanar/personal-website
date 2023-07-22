@@ -27,9 +27,8 @@ const AboutMe = () => {
 
     return(
         <FadeInBox>
-            <Box 
-            className = {`abt-me-box1 ${randomImage}`}
-        >
+            <Box className = {`abt-me-box1 ${randomImage}`}>
+            <p id = "abt">About Me</p>
             <Center id = "abt-me-cntr">
                 <FadeInBox>
                     <Box 
@@ -39,7 +38,7 @@ const AboutMe = () => {
                         Computer Science BSc. graduate from Royal Holloway, University of London. 
                         Experienced in using various Software Engineering tools, processes, and 
                         techniques in addition to being able to write good code
-                        as a part of a team that works when delivered into a (emulated) client environment. 
+                        as a part of a team that works when delivered into a client environment. 
                         Driven to learn for and about any problem
                         encountered, and apply those discoveries in order to solve them in a timely fashion.
                         <br/><br/>

@@ -1,0 +1,16 @@
+#footer {
+    text-align:center;
+    width:auto;
+    height:30px;			/* Height of the footer */
+    background-color:#3b5998;
+    padding:10px;
+    padding-bottom:15px;
+}
+
+#footer-item{
+    font-size: 13px;
+    cursor:default;
+    font-family:Courier New;
+    color:black;
+    opacity:0.9;
+}
