@@ -4,7 +4,7 @@ import { Box, Center, Container, SimpleGrid } from '@chakra-ui/react'
 import '../css/Portfolio.css'
 
 const Portfolio = () => {
-
+    const p1 = 'https://firebasestorage.googleapis.com/v0/b/omeryanar-1b0a4.appspot.com/o/project-images%2Fev3.png?alt=media&token=d2e8a823-1302-4cd8-b664-f60833a9af70'; 
     const [randomImage, setRandomImage] = useState('');
 
     useEffect(() => {
@@ -34,20 +34,28 @@ const Portfolio = () => {
                 spacing = {10} 
                 gridGap={50}
                 className="sGrid">
-                <Box className="sGrid b">
-                    <p>Hello</p>
+                <Box className="sGrid b p1">
+                    <Box className = "pr-title">
+                            Proportional-Response Market Simulator
+                    </Box>
                 </Box>
                     
-                <Box className="sGrid b">
-                    <p>Hello</p>
+                <Box className="sGrid b p2">
+                    <Box className = "pr-title">
+                        Oaxaca.com Restaurant Website
+                    </Box>
                 </Box>
                     
-                <Box className="sGrid b">
-                    <p>Hello</p>
+                <Box className="sGrid b p3">
+                    <Box className = "pr-title">
+                            EV3 Robotics Project
+                    </Box>
                 </Box>
-
-                <Box className="sGrid b">
-                    <p>Hello</p>
+            
+                <Box className="sGrid b p4" style={{cursor:'default'}}>
+                    <Box className = "pr-title">
+                        To be Updated...
+                    </Box>
                 </Box>
             </SimpleGrid>
         </div>

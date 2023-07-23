@@ -4,6 +4,7 @@ import NavBar from './nav/NavBar';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
+import Top from './components/Top';
 
 const App = () => {
   const scrollToSection = (sectionId) => {
@@ -24,6 +25,7 @@ const App = () => {
      
       <Portfolio />
       <Footer/>
+      <Top/>
         
     </div>
   );
