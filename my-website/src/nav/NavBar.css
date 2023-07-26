@@ -1,0 +1,81 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "./fontawesome-icons.css";
+
+.navbar {
+    /*Background*/
+    background-color: #333;
+    background-image: url('../images/dots.png');
+  }
+
+  .navbar {
+    /*Background*/
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:120px;
+    position:relative;
+    font-family: 'Sansation Light';
+  }
+
+  .head-item1{
+    text-decoration:none;
+		text-align:center;
+		font-size:60px;
+		font-weight:550;
+    position: relative;
+    left: 40px;
+		
+	}
+	
+	#myName{
+		color:	black;
+		-webkit-transition: all .2s linear;
+		-moz-transition: all .2s linear;
+		-ms-transition: all .2s linear;
+		-o-transition: all .2s linear;
+		transition: all .2s linear;
+	}
+	
+	#myName:hover{
+		color:#3B5998;
+		 
+	}
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+
+
+  }
+  
+  .nav-links li a {
+    color: #000000;
+    font-size:20px;
+    font-weight:500;
+    text-decoration: none;
+  }
+
+  @media (max-width: 1000px) {
+    .nav-links li a {
+      font-size: 14px; /* Set the font size for screens with width less than or equal to 768px */
+    }
+  }
+  
+  .nav-links li a:hover {
+    color:#3B5998;
+  }
+
+
+  .head-item3{
+		display:flex;
+    text-align: center;
+    position:relative;
+    padding: 20px 50px 0px 0px ;
+	
+	}
+	.c-item{
+    color:#000000;
+		min-width:100px;
+	}

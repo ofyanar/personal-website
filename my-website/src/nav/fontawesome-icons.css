@@ -1,0 +1,22 @@
+.github-icon {
+    font-size: 3rem; /* Icon size */
+    color: black; /* Icon color */
+    transition: all .3s linear;
+  }
+  
+  /* LinkedIn Icon */
+  .linkedin-icon {
+    font-size: 3rem; /* Icon size */
+    color: #0077B5; /* Icon color */
+    transition: all .3s linear;
+  }
+
+  .github-icon:hover{
+    font-size: 3rem; /* Icon size */
+    color: #3B5998; /* Icon color */
+  }
+  
+  .linkedin-icon:hover{
+    font-size: 3rem; /* Icon size */
+    color: #3B5998; /* Icon color */
+  }
