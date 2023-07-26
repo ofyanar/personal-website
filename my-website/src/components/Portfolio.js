@@ -1,15 +1,24 @@
 import React, { useEffect, useState } from 'react'
-import { Box, Center, Container, SimpleGrid } from '@chakra-ui/react'
+import { Box,  SimpleGrid } from '@chakra-ui/react'
 
 import '../css/Portfolio.css'
 
-const Portfolio = () => {
+import EV3 from './projects/screens/EV3';
+
+const Portfolio = ({updateBody}) => {
     const p1 = 'https://firebasestorage.googleapis.com/v0/b/omeryanar-1b0a4.appspot.com/o/project-images%2Fev3.png?alt=media&token=d2e8a823-1302-4cd8-b664-f60833a9af70'; 
     const [randomImage, setRandomImage] = useState('');
 
     useEffect(() => {
         setRandomImage(getRandomImage());
     }, []);
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        updateBody(
+                <EV3/>
+            );
+    }
 
     function getRandomImage() {
         const images = [
@@ -46,9 +55,9 @@ const Portfolio = () => {
                     </Box>
                 </Box>
                     
-                <Box className="sGrid b p3">
+                <Box id = "EV3" className="sGrid b p3" onClick={handleClick}>
                     <Box className = "pr-title">
-                            EV3 Robotics Project
+                            EV3 Room Traverser
                     </Box>
                 </Box>
             

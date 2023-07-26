@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './css/App.css';
 import NavBar from './nav/NavBar';
 import AboutMe from './components/AboutMe';
@@ -7,6 +7,10 @@ import Footer from './components/Footer';
 import Top from './components/Top';
 
 const App = () => {
+  const updateBody =(newBody) => {
+    setBody(newBody);
+  };
+
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     section.scrollIntoView({ 
@@ -15,15 +19,17 @@ const App = () => {
     });
   };
 
+  const [body, setBody] = useState(
+    <>
+      <AboutMe/>
+      <Portfolio updateBody = {updateBody}/>
+    </>
+  );
+
   return (
     <div className="App">
       <NavBar scroll = {scrollToSection}/>
-      <div id="About">
-          <AboutMe />
-      </div>
-
-     
-      <Portfolio />
+      {body}
       <Footer/>
       <Top/>
         

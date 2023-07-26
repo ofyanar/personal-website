@@ -26,7 +26,8 @@ const AboutMe = () => {
       }
 
     return(
-        <FadeInBox>
+        <div id="About"> 
+            <FadeInBox>
             <Box className = {`abt-me-box1 ${randomImage}`}>
             <p id = "abt">About Me</p>
             <Center id = "abt-me-cntr">
@@ -54,8 +55,9 @@ const AboutMe = () => {
                 </FadeInBox>
                 
             </Center>
-        </Box>
-        </FadeInBox>
+            </Box>
+            </FadeInBox>
+        </div>
         
     )
 }

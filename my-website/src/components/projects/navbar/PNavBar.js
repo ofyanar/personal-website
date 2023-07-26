@@ -1,16 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Center } from '@chakra-ui/react';
-import MyName from './MyName';
-import IconLinks from './IconLinks';
-import App from '../App';
+import MyName from '../../../nav/MyName';
+import IconLinks from '../../../nav/IconLinks';
+import App from '../../../App';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faIdCard, faDiagramProject, faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faIdCard, faDiagramProject, faDownload } from '@fortawesome/free-solid-svg-icons';
 
-import './NavBar.css'; // Import your CSS file
+import '../../../nav/NavBar.css';
 
-const NavBar = ({scroll}) => {
+const PNavBar = ({scroll}) => {
   const cv_url = "https://firebasestorage.googleapis.com/v0/b/omeryanar-1b0a4.appspot.com/o/CV%20-%20General.pdf?alt=media&token=77b1640a-8277-4d39-a41b-fdbec815b224";
   return (
     <nav className="navbar">
@@ -21,10 +20,10 @@ const NavBar = ({scroll}) => {
                 <a href="">Home <FontAwesomeIcon icon={faHouse} /></a>
               </li>
               <li>
-                <a onClick={() => scroll('About')}>About <FontAwesomeIcon icon={faIdCard} /></a>
+                <a href = "App/#About" onClick={() => scroll('About')}>About <FontAwesomeIcon icon={faIdCard} /></a>
               </li>
               <li>
-                <Link to = "/Postfolio">Portfolio <FontAwesomeIcon icon={faDiagramProject} /></Link>
+                <a href = "App" onClick={() => scroll('Portfolio')}>Portfolio <FontAwesomeIcon icon={faDiagramProject} /></a>
               </li>
               <li>
                 <a href={cv_url} target="_blank">CV <FontAwesomeIcon icon={faDownload} /></a>
@@ -39,4 +38,4 @@ const NavBar = ({scroll}) => {
 
  /**<li><a onClick={() => scroll('Contact')}>Contact <FontAwesomeIcon icon={faEnvelope} /></a></li>**/
 
-export default NavBar;
+export default PNavBar;
