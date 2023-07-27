@@ -1,6 +1,4 @@
-import React from 'react'
-
-import NavBar from '../../../nav/NavBar';
+import React from 'react';
 
 const EV3 = () => {
     return(

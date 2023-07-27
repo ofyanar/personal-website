@@ -11,6 +11,14 @@ const App = () => {
     setBody(newBody);
   };
 
+  const defaultBody = (
+    <>
+      <AboutMe/>
+      <Portfolio updateBody = {updateBody}/>
+    </>
+  );
+
+
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     section.scrollIntoView({ 
@@ -19,16 +27,11 @@ const App = () => {
     });
   };
 
-  const [body, setBody] = useState(
-    <>
-      <AboutMe/>
-      <Portfolio updateBody = {updateBody}/>
-    </>
-  );
+  const [body, setBody] = useState(defaultBody);
 
   return (
     <div className="App">
-      <NavBar scroll = {scrollToSection}/>
+      <NavBar scroll = {scrollToSection} updateBody = {updateBody} body = {body} df = {defaultBody}/>
       {body}
       <Footer/>
       <Top/>
