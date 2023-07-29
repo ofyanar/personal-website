@@ -1,6 +1,5 @@
 import { chakra } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import '../css/AboutMe.css';
 
 // Create a custom motion component with the 'Box' element as the base
 const MotionBox = motion(chakra.div);
