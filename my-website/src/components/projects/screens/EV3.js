@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Box,  Center, SimpleGrid } from '@chakra-ui/react';
 
+import FadeInBox from '../../../components/FadeInBox';
+
 import { getDocs, collection } from '@firebase/firestore';
 import {firestore} from '../../../firebase_setup/firebase';
 
 import '../css/EV3.css';
 const EV3 = () => {
-  const prImage = 'https://firebasestorage.googleapis.com/v0/b/omeryanar-1b0a4.appspot.com/o/project-images%2Fev3.png?alt=media&token=d2e8a823-1302-4cd8-b664-f60833a9af70';
-
-
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -33,16 +32,36 @@ const EV3 = () => {
   const sensors = item1 ? item1.sensors : '';
     return(
         <div class = "ev3">
+          <FadeInBox>
             <p id ="ev3-title">EV3 Room Traverser</p>
-            <SimpleGrid class = "ev3 desc" columns={2}>
-              <div 
-                class = "ev3 desc img" ></div>
-              <div 
-                class="ev3 desc txt">
-                  <h2>Description</h2>
+            <Center id = "ev3-det">
+              <Box id="det-txt">
+                  <p>DESCRIPTION</p>
                   {desc}
-                  </div>
-            </SimpleGrid>
+              </Box>
+            </Center>
+            <Center>
+              <Box id = "det-img" ></Box>
+            </Center>
+            <p id = "path-title">TRAVERSAL PATH</p>
+            <Center>
+              <SimpleGrid id="det-path" columns={2} >
+                  <Box id = "det-path1"></Box>
+                  <Box id = "det-path2"></Box>
+              </SimpleGrid>
+            </Center>
+            <p id = "fd-title">MORE ABOUT EV3</p>
+            <Center marginTop={10}>
+              <SimpleGrid id = "further-det" columns={2}>
+                <Center><Box id = "fd-lm"><p>Lego Mindstorms</p>{legoMindstorms}</Box></Center>
+                <Center><Box id = "fd-ss"><p>Sensors</p>{sensors}</Box></Center>
+              </SimpleGrid>
+            </Center>
+            <p id = "fc-title">PROGRAM CONTROL-FLOW</p>
+            <Center>
+              <Box id = "flow-chart"></Box>
+            </Center>
+          </FadeInBox>
         </div>
 )};
 

@@ -49,8 +49,7 @@ const AboutMe = () => {
                         to learn from those with greater experience and expertise, and I find genuine joy in this pursuit.
                         <br/><br/>
                         Whilst you're here you should check out my
-                        portfolio 🧐. Feel free to shoot me a
-                        message or to view/download my CV 🚀.
+                        portfolio 🧐.
                     </Box>
                 </FadeInBox>
                 

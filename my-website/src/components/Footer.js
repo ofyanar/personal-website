@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div id="footer">
 		<div id="footer-item">
-			<p>&copy;<span>{currentYear}</span> by Omer Yanar</p>
+			<p>&copy;<span>2022-{currentYear}</span> by Omer Yanar</p>
 		</div>
 	</div>
     )

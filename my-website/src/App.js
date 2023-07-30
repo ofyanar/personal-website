@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './css/App.css';
 import NavBar from './nav/NavBar';
 import AboutMe from './components/AboutMe';
@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Top from './components/Top';
  
 function App() {
+  window.scrollTo(0, 0);
   const updateBody =(newBody) => {
     setBody(newBody);
   };
