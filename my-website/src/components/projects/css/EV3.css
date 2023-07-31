@@ -21,8 +21,17 @@
     height:auto;    
     color: rgb(255, 255, 255);
     background-color: rgb(255, 255, 255, 0.07);
+    border: solid rgb(255, 255, 255, 0.5) 1px;
     border-radius: 10px;
     cursor: default;
+}
+
+#det-txt a{
+    text-decoration: underline;
+}
+
+#det-txt a:hover{
+    color: rgb(255, 0, 0);
 }
 
 #det-txt p{
@@ -32,7 +41,7 @@
 }
 
 #det-img {
-    height: 400px;
+    height: 500px;
     position:relative;
     background-image: url("https://firebasestorage.googleapis.com/v0/b/omeryanar-1b0a4.appspot.com/o/project-images%2Fev3.png?alt=media&token=d2e8a823-1302-4cd8-b664-f60833a9af70");
     background-repeat: no-repeat;
@@ -40,8 +49,7 @@
     background-attachment: fixed;
     background-size: cover;
     opacity: 0.6;
-    border-radius: 15px;
-    width:80vw;
+    width:100vw;
 }
 
 
@@ -63,7 +71,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size:100% auto ;
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/omeryanar-1b0a4.appspot.com/o/project-details%2Fev3%2Fpath-1.png?alt=media&token=05695ac5-5639-4708-8aa1-36f463c5b60d");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/omeryanar-1b0a4.appspot.com/o/project-details%2Fev3%2Fpath-1.png?alt=media&token=2a11a4cf-32c1-4879-b0b7-a580172152d7");
 }
 
 #det-path2{
@@ -72,7 +80,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size:85% auto ;
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/omeryanar-1b0a4.appspot.com/o/project-details%2Fev3%2Fpath-2.png?alt=media&token=01195c5c-6b31-4390-a0da-51cea70d19b9");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/omeryanar-1b0a4.appspot.com/o/project-details%2Fev3%2Fpath-2.png?alt=media&token=4d0719bc-32b8-4bed-93a2-bdd2793e8682");
 }
 
 #fd-ss, #fd-lm {
@@ -83,6 +91,7 @@
     height:auto;    
     color: rgb(255, 255, 255);
     background-color: rgb(255, 255, 255, 0.07);
+    border: solid rgb(255, 255, 255, 0.5) 1px;
     border-radius: 10px;
     cursor: default;
 }
@@ -94,15 +103,17 @@
 }
 
 #flow-chart {
+    border: solid rgb(0, 0, 0) 1px;
+    border-radius: 10px;
     margin: 20px 0px 20px 0px;
     position:static;
     width: 40vw;
-    height:50vh;
+    height:48vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size:100% auto ;
 
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/omeryanar-1b0a4.appspot.com/o/project-details%2Fev3%2Fcontrol-flow.png?alt=media&token=251cb5da-b580-4f01-8afd-33295db40159");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/omeryanar-1b0a4.appspot.com/o/project-details%2Fev3%2Fcontrol-flow.png?alt=media&token=dfb8818a-faf9-4287-98a3-61da846fc5e2");
     border-radius: 10px;
 }
 
