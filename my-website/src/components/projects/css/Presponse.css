@@ -1,0 +1,75 @@
+.presponse {
+    background-color: rgb(32, 44, 69);
+    font-family: 'Sansation Light';
+    color: rgb(255, 255, 255);
+    height: auto;
+}
+
+
+#pr-det {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#pr-txt {
+    padding: 20px;
+    width:80%;
+    height:auto;    
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0.07);
+    border: solid rgb(255, 255, 255, 0.5) 1px;
+    border-radius: 10px;
+    cursor: default;
+}
+
+#pr-txt p, #vid p, #se-pr p{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+
+#vid, #se-pr {
+    padding: 20px;
+    width:80%;
+    height:auto;    
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0.07);
+    border: solid rgb(255, 255, 255, 0.5) 1px;
+    border-radius: 10px;
+    cursor: default;
+}
+
+#pdesc {
+    padding-bottom: 40px;
+}
+
+#se-pr {
+    margin: 30PX;
+}
+
+
+
+#pr-title{
+	text-align:center;
+	font-size:25px;
+    font-weight: 700;
+	color:rgb(255, 255, 255);
+	position:relative;
+}
+
+#pr-title::after{
+	content: "";
+	text-align:center;
+	font-size:20px;
+	background:#3b5998;
+	position:absolute;
+	
+	bottom: -1px;
+	left: 37.5%;
+	height: 3px;
+	width: 25%;
+	
+}

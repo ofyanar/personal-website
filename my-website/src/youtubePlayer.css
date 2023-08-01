@@ -1,0 +1,14 @@
+.player-wrapper {
+    position: relative;
+    width: 100%;
+    /* Set a fixed aspect ratio height (e.g., 16:9) */
+    padding-top: 75%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+  
+  /* Center the video player */
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
