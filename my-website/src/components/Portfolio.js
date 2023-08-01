@@ -8,7 +8,6 @@ import Oaxaca from './projects/screens/Oaxaca';
 import Presponse from './projects/screens/Presponse';
 
 const Portfolio = ({updateBody}) => {
-    const p1 = 'https://firebasestorage.googleapis.com/v0/b/omeryanar-1b0a4.appspot.com/o/project-images%2Fev3.png?alt=media&token=d2e8a823-1302-4cd8-b664-f60833a9af70'; 
     const [randomImage, setRandomImage] = useState('');
 
     useEffect(() => {

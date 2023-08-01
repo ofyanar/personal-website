@@ -40,7 +40,7 @@ const EV3 = () => {
               <Box id="det-txt">
                   <p>DESCRIPTION</p>
                   {desc}<br/><br/>
-                  You can find the source-code for this program <a target = "_blank" href = "https://github.com/ofyanar/EV3-Item-Searcher">here</a>.
+                  You can find the source-code for this program <a target = "_blank" rel="noreferrer, noopener" href = "https://github.com/ofyanar/EV3-Item-Searcher">here</a>.
               </Box>
             </Center>
 

@@ -4,7 +4,7 @@ import MyName from './MyName';
 import IconLinks from './IconLinks';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faIdCard, faDiagramProject, faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faIdCard, faDiagramProject, faDownload } from '@fortawesome/free-solid-svg-icons';
 
 import './NavBar.css'; // Import your CSS file
 
@@ -16,13 +16,13 @@ const NavBar = ({scroll, updateBody, body, df}) => {
     if (body !== df) {
       updateBody(df);
     }
-    const timer = setTimeout(() => {
+    setTimeout(() => {
       if (e.target.id === 'abtt'){
         scroll('About');
       } else if (e.target.id === 'prt'){
         scroll('Portfolio');
       }
-    }, 10);
+    }, 20);
 
   };
   
@@ -41,7 +41,7 @@ const NavBar = ({scroll, updateBody, body, df}) => {
                 <a id = "prt" onClick = {handleClick}>Portfolio <FontAwesomeIcon icon={faDiagramProject} /></a>
               </li>
               <li>
-                <a href={cv_url} target="_blank">CV <FontAwesomeIcon icon={faDownload} /></a>
+                <a href={cv_url} target="_blank" rel="noreferrer, noopener" >CV <FontAwesomeIcon icon={faDownload} /></a>
               </li>
           </ul>
         </Center>
