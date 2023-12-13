@@ -9,7 +9,7 @@ import { faHouse, faIdCard, faDiagramProject, faDownload } from '@fortawesome/fr
 import './NavBar.css'; // Import your CSS file
 
 const NavBar = ({scroll, updateBody, body, df}) => {
-  const cv_url = "https://firebasestorage.googleapis.com/v0/b/omeryanar-1b0a4.appspot.com/o/CV%20-%20General.pdf?alt=media&token=77b1640a-8277-4d39-a41b-fdbec815b224";
+  const cv_url = "https://firebasestorage.googleapis.com/v0/b/omeryanar-1b0a4.appspot.com/o/CV_General.pdf?alt=media&token=d5ecd120-f21a-49e1-91af-448eac798400";
 
   const handleClick = (e) => {
     e.preventDefault();
